@@ -30,15 +30,17 @@ open ~/.zshrc {ZSH_THEME="bullet-train", font=Powerline fonts@GitHub,meslo}
 
 # Tools
 ## vim
-1. Vundle
-2. YouCompleteMe
+1. [Vundle](https://github.com/VundleVim/Vundle.vim.git)
+2. [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 
 ## iTerm2
-1. zsh
-2. zsh-completions
-3. zsh-autosuggestions
-4. zsh-syntax-highlighting
-5. Theme: bullet-train
+[iTerm2](https://github.com/gnachman/iTerm2)
+1. [zsh](http://www.zsh.org)
+2. [zsh-completions](https://github.com/zsh-users/zsh-completions)
+3. [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)
+4. [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+5. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+6. Theme: [bullet-train](https://github.com/caiogondim/bullet-train.zsh)
 
 # Device
 MacBookPro (15", 2017) macOS 10.13.x
