@@ -7,7 +7,8 @@ dotrc
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 brew install cmake
-.vim/bundle/YouCompleteMe/install.sh --clang-completer
+vim +PluginInstall +qall
+.vim/bundle/YouCompleteMe/install.py --clang-completer
 cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=~/ycm_temp/llvm_root_dir . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 cmake --build . --target ycm_core --config Release
 ```
