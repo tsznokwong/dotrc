@@ -6,9 +6,14 @@ dotrc
 ```
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-brew install cmake
-vim +PluginInstall +qall
-.vim/bundle/YouCompleteMe/install.py --clang-completer
+brew install cmake python go nodejs java vim
+# Require .vimrc
+vim +PluginInstall +qall 
+.vim/bundle/YouCompleteMe/install.py --clang-completer --system-libclang --all
+# java support
+sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk 
+
+# Not Ready
 cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=~/ycm_temp/llvm_root_dir . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 cmake --build . --target ycm_core --config Release
 ```
